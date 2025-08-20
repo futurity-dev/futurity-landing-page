@@ -1,9 +1,13 @@
 import type React from "react"
-import type { Metadata } from "next/core"
+import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
+import localFont from 'next/font/local';
+const vazir = localFont({
+  src: './fonts/Vazir.ttf',
+})
 
 export const metadata: Metadata = {
   title: "تیم توسعه وب - ساخت وبسایت و آموزش برنامه‌نویسی",
@@ -17,16 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fa" dir="rtl" suppressHydrationWarning>
-      <head>
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
-      </head>
+    <html lang="fa" dir="rtl" suppressHydrationWarning className={vazir.className}>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
