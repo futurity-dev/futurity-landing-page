@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                <span>info@webteam.com</span>
+                <span>futurity.dev@outlook.com</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-4 h-4" />
