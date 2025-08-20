@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-4 h-4" />
-                <span>021-12345678</span>
+                <span>+989165949550</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MessageSquare className="w-4 h-4" />
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 text-center">
-          <p className="text-muted-foreground">© 2024 تیم توسعه وب. تمامی حقوق محفوظ است.</p>
+          <p className="text-muted-foreground">© تیم futurity.dev -- تمامی حقوق محفوظ است</p>
         </div>
       </div>
     </footer>
